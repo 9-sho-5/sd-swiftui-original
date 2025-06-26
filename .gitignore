@@ -1,0 +1,69 @@
+# macOS
+.DS_Store
+
+# Build
+**/build/
+**/DerivedData/
+
+# Xcode user data and workspace
+**/*.xcuserdatad/
+**/*.xcuserstate
+**/*.xcscmblueprint
+**/*.moved-aside
+**/*.xcworkspace/
+**/project.xcworkspace/
+
+# Xcode project files (user-specific)
+**/xcuserdata/
+
+# SwiftPM
+**/.swiftpm/
+**/Package.resolved
+**/Artifacts/
+
+# CocoaPods (if used)
+**/Pods/
+**/Podfile.lock
+
+# Carthage (if used)
+**/Carthage/
+**/Carthage/Build/
+
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots/**/*.png
+**/fastlane/test_output/
+
+# SwiftLint
+**/.swiftlint.tmp
+**/.swiftlint.cache
+
+# Playgrounds
+**/timeline.xctimeline
+**/playground.xcworkspace
+
+# Firebase / Secrets / Config
+**/GoogleService-Info.plist
+**/Secrets.plist
+**/Config.xcconfig
+
+# Binary & archives
+**/*.xcarchive
+**/*.ipa
+**/*.dSYM
+**/*.dSYM.zip
+**/*.zip
+**/*.mp4
+**/*_*.mp4
+
+# Editor config
+**/.idea/
+**/.vscode/
+**/*.orig
+**/*.swp
+**/*.swo
+
+# Environment files
+**/.env
+**/.env.*
