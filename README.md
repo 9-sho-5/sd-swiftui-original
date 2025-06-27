@@ -75,6 +75,34 @@ Clipboard Formatter では、変換先アプリに合わせて、これらを自
 
 ---
 
+## 🔧 環境構築（Gemini API キーの設定）
+
+1. プロジェクトの `App` フォルダ内に `Config.xcconfig` ファイルを作成します。
+
+2. 以下のように、Gemini API キーを定義してください：
+
+```xcconfig
+// App/Config.xcconfig
+GEMINI_API_KEY = your_api_key_here
+```
+
+3. `Xcode` の `Build Settings > Configuration` にて、この `Config.xcconfig` を読み込むよう設定してください。
+
+4. Swift コードからは以下のように参照します：
+
+```swift
+let apiKey = Bundle.main.infoDictionary?["GEMINI_API_KEY"] as? String
+```
+
+5. API キーの漏洩を防ぐため、`.gitignore` に追加します：
+
+```gitignore
+# Secrets
+App/Config.xcconfig
+```
+
+---
+
 ## 🔮 今後の追加予定
 
 - 太字・斜体などのマークダウン記法に対応した高度な変換
