@@ -12,18 +12,22 @@ struct HistoryView: View {
     @Query(sort: [SortDescriptor(\ConversionLog.date, order: .reverse)]) var logs: [ConversionLog]
 
     var body: some View {
-        List(logs) { log in
-            VStack(alignment: .leading) {
-                Text("[\(log.platform)]")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                Text(log.content)
-                    .lineLimit(2)
-                Text(log.date.formatted())
-                    .font(.footnote)
-                    .foregroundColor(.gray)
+        NavigationView {
+            List(logs) { log in
+                NavigationLink(destination: HistoryDetailView(log: log)) {
+                    VStack(alignment: .leading) {
+                        Text("[\(log.platform)]")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        Text(log.content)
+                            .lineLimit(2)
+                        Text(log.date.formatted())
+                            .font(.footnote)
+                            .foregroundColor(.gray)
+                    }
+                }
             }
+            .navigationTitle("変換履歴")
         }
-        .navigationTitle("変換履歴")
     }
 }

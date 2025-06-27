@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("colorSchemeSelection") private var colorSchemeSelection: String = ColorSchemeOption.system.rawValue
+
     var body: some View {
+        let selectedOption = ColorSchemeOption(rawValue: colorSchemeSelection) ?? .system
+
         TabView {
             ConvertView()
                 .tabItem {
@@ -25,6 +29,7 @@ struct ContentView: View {
                     Label("設定", systemImage: "gearshape")
                 }
         }
+        .preferredColorScheme(selectedOption.colorScheme)
     }
 }
 

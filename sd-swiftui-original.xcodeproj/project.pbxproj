@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		ED2679BC2E0D4E0300100907 /* sd-swiftui-original.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "sd-swiftui-original.app"; path = "/Users/hosho/workspace/github.com/9-sho-5/sd-tx-swiftui/sd-swiftui-original/build/Debug-iphoneos/sd-swiftui-original.app"; sourceTree = "<absolute>"; };
+		ED267A2A2E0D682500100907 /* sd-swiftui-original.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sd-swiftui-original.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2679BE2E0D4E0300100907 /* sd-swiftui-original */,
+				ED267A2A2E0D682500100907 /* sd-swiftui-original.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = "sd-swiftui-original";
-			productReference = ED2679BC2E0D4E0300100907 /* sd-swiftui-original.app */;
+			productReference = ED267A2A2E0D682500100907 /* sd-swiftui-original.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
